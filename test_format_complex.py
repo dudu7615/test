@@ -3,15 +3,20 @@
 import math
 
 # lambda表达式空格缺失
-calculate_square = lambda x:x**2
-calculate_circle_area = lambda r: math.pi *r*r
+calculate_square = lambda x: x**2
+calculate_circle_area = lambda r: math.pi * r * r
+
 
 # 条件表达式格式混乱
 def get_discount(price):
-    return price * 0.8 if price > 1000 else price*0.9 if price >500 else price
+    return price * 0.8 if price > 1000 else price * 0.9 if price > 500 else price
+
 
 # 字符串拼接无空格
-message = "Hello,"+"World!"+" This is a test string with no spaces around operators."
+message = (
+    "Hello," + "World!" + " This is a test string with no spaces around operators."
+)
+
 
 # 多行注释和代码混合格式问题
 def process_data(data):
@@ -23,8 +28,22 @@ def process_data(data):
     # 3. 计算总和
     return sum(converted) if converted else 0
 
+
 # 字典推导式格式问题
-data_dict = {k:v for k,v in enumerate(["a","b","c","d","e"]) if v not in ["b","d"]}
+data_dict = {
+    k: v for k, v in enumerate(["a", "b", "c", "d", "e"]) if v not in ["b", "d"]
+}
 
 # 超长import（模拟场景）
-from typing import List,Dict,Optional,Tuple,Set,Union,Callable,Iterable,Generator,Coroutine
+from typing import (
+    List,
+    Dict,
+    Optional,
+    Tuple,
+    Set,
+    Union,
+    Callable,
+    Iterable,
+    Generator,
+    Coroutine,
+)
